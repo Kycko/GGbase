@@ -11,9 +11,10 @@ dir = {'libs':'libs/'}
 dir   ['pics'] = dir['libs']+'pics/'
 dir['appPics'] = dir['pics']+'app/'
 
-# изображения
+# файлы
 # ↓ нельзя здесь создавать PhotoImage: нужны master-объекты
-pic = {'appIcon':dir['appPics']+'app.ico'}
+files = {'pics':{'appIcon':dir['appPics']+'app.ico'},
+         'db'  :           dir['libs']   +'database.txt'}
 
 # спец. символы языков
 uniqueSymbols = ('t1','t2','t3')    # пока что тестовые, потом заменить

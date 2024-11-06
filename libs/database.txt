@@ -1,0 +1,88 @@
+# rs = road signs:
+    # circle/triangle/square
+    # text    white/black/...
+    # base    white/black/...
+    # outline white/black/red/yellow/...
+# rsNoWay        = кирпич
+# rsOneWay:
+    # l = line / s = square
+# rsDirSmall/Big = direction...
+# rsCancel       = отмена ограничений:
+    # bbl = bold black line
+# rsTurnWarn  = turn warning:
+    # round/sharp (плавный/угловатый)
+# rsTurnOuter = in-turn signs:
+    # arrows/base/outline
+# rsCameras   = предупреждение о камерах
+# carSignsF/B = front/back:
+    # l = line / s = square
+    # mix = разноцветные
+# busSigns    = bus stop signs (цвета сверху вниз)
+# busStopBld  = строение-остановка:
+    # metallic/wooden/...
+    # br=brown/bl=blue/bk=black
+
+!Лондон →↗ окрестности Chelmsford'а
+    domain      :uk
+    measures    :uk
+    lang        :en
+    symb        :-
+    driving     :left
+    roadMarks   :↹w1——/↥w1- ∙ -
+    rsSpeedLimit:c/tbk/bw/or
+    rsDirSmall  :tbk/bw
+    rsGiveWay   :t/bw/or/give way
+    rsCancel    :c/bbl/bw
+    rsDeadEnd   :normal
+    rsTurnWarn  :round
+    rsTurnOuter :aw/bbk/oy
+    rsCameras   :speed watch area
+    carSignsF   :lw
+    carSignsB   :ly
+    busSigns    :wbr
+    busStopBld  :wbr
+
+!остров между Хельсинки и Стокгольмом (где Мариехамн)
+    domain      :ax
+    measures    :iso
+    lang        :lat
+    symb        :åö
+    driving     :right
+    roadMarks   :↹w1- -/↥w1- -
+    rsSpeedLimit:c/tbk/by/or
+    rsDirSmall  :tw/bbl
+    carSignsF   :lw
+    carSignsB   :lw
+
+!Кения
+    domain      :ke
+    lang        :en
+    symb        :-
+    driving     :left
+    roadMarks   :↹w1——/↥y1- -
+    carSignsF   :lw
+    carSignsB   :sy
+
+!Мюнхен ↖ окрестности Augsburg'a
+    domain      :de
+    measures    :iso
+    lang        :lat
+    symb        :öüß
+    driving     :right
+    rsSpeedLimit:c/tbk/bw/or
+    rsGiveWay   :t/bw/or
+    carSignsF   :euro
+    carSignsB   :euro
+
+!США ↘ Алабама
+    measures    :uk
+    lang        :en
+    symb        :-
+    driving     :right
+    rsSpeedLimit:s/tbk/bw
+    rsNoWay     :c/tw/br/do no enter
+    rsOneWay    :l/tbk/bw/one way
+    rsDirBig    :s/tw/bg
+    rsGiveWay   :t/bw/or
+    carSignsF   :-
+    carSignsB   :s/mix
